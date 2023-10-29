@@ -23,7 +23,7 @@ In token, replace YOUR_BOT_TOKEN by your token (don't remove this -> " )
 Go to the [nodejs website](nodejs.org) and install the LTS version for your system (Windows, Linux, Mac)
 Now go back to vscode (visual studio code) and open up a terminal using ctrl + j or Terminal and New terminal
 Type npm init -y
-Type npm i @discordjs/rest@2.0.1 discord.js@14.13.0 ms@2.1.3 mysql@2.18.1 path@0.12.7 sanitize-filename@1.6.3 (ms is not necessary for the moment but in the futur it will be)
+Type npm i @discordjs/rest@2.0.1 discord.js@14.13.0 ms@2.1.3 path@0.12.7 sanitize-filename@1.6.3 (ms is not necessary for the moment but in the futur it will be)
 And finally type node main and it's done!
 
 # Problem ?
