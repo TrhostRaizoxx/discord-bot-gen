@@ -13,7 +13,7 @@ module.exports = {
   
   async run(bot, message, args) {
     
-    if(message.channel.id !== "1168226407676121260") return message.reply("Cette commande n'est utilisable uniquement dans le salon <#1168226407676121260>.")
+    if(message.channel.id !== "YOUR_CHANNEL_ID") return message.reply("Cette commande n'est utilisable uniquement dans le salon <#YOUR_CHANNEL_ID>.") //If you want to be multiguilded bot, you can add mysql to him. For any help, go to my discord server (in the README part)
 
     if (args.length !== 1) {
         message.reply('Utilisation incorrecte. Utilisez `+gen <service>`.');
