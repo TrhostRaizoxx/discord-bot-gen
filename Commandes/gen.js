@@ -48,7 +48,7 @@ module.exports = {
       function getFormattedDateTime() {
         const currentDate = new Date();
         const day = currentDate.getDate().toString().padStart(2, '0');
-        const month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Les mois commencent à 0, donc ajoutez 1
+        const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
         const year = currentDate.getFullYear();
         const hours = currentDate.getHours().toString().padStart(2, '0');
         const minutes = currentDate.getMinutes().toString().padStart(2, '0');
@@ -64,9 +64,8 @@ module.exports = {
   
       message.author.send({ embeds: [embed] })
       .then(() => {
-        // La ligne a été envoyée avec succès en MP, supprimez uniquement le texte de la ligne du fichier texte
         if (lines.length > 0) {
-          lines[lines.length - 1] = ""; // Remplacez la dernière ligne par une chaîne vide
+          lines[lines.length - 1] = "";
           const updatedFileContents = lines.join('\n');
           fs.writeFileSync(filePath, updatedFileContents, 'utf-8');
         }
